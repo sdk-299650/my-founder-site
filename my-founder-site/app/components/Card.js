@@ -12,9 +12,10 @@ export default function Card({ title, description, link, linkLabel, bgImage }) {
       style={hasBackground ? {
   backgroundImage: `url(${bgImage})`,
   backgroundSize: title.includes('SignalRise') ? 'contain' : 'cover',
-  backgroundPosition: title.includes('SignalRise') ? 'top' : 'center',
-  backgroundRepeat: 'no-repeat',
+  backgroundPosition: title.includes('Blog') ? 'top center' : title.includes('SignalRise') ? 'top' : 'center',
+  backgroundRepeat: 'no-repeat'
 } : {}}
+
 
 
     >
